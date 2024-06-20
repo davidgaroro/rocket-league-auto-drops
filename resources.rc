@@ -1,0 +1,25 @@
+#include <verrsrc.h>
+
+VS_VERSION_INFO VERSIONINFO
+FILEVERSION 1,0,0,0 // Binary version number for the file
+PRODUCTVERSION 1,0,0,0 // Binary version number for the product 
+FILEOS VOS__WINDOWS32 // File was designed for 32-bit Windows
+FILETYPE VFT_APP // File contains an application
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0" // 0409 English (US) and 04b0 Unicode
+        BEGIN
+            VALUE "FileDescription",  "Rocket League Auto Drops"
+            VALUE "FileVersion",      "1.0.0"
+            VALUE "LegalCopyright",   "Copyright (c) 2024 davidgaroro"
+            VALUE "OriginalFilename", "rocket-league-auto-drops.exe"
+            VALUE "ProductName",      "Rocket League Auto Drops"
+            VALUE "ProductVersion",   "1.0.0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200 // English (US), Unicode
+    END
+END

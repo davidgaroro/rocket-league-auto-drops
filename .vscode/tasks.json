@@ -2,15 +2,22 @@
   "version": "2.0.0",
   "tasks": [
     {
-      "type": "cppbuild",
+      "label": "build-resources",
+      "type": "shell",
+      "command": "rc.exe",
+      "args": ["resources.rc"]
+    },
+    {
       "label": "C/C++: cl.exe build active file",
+      "type": "cppbuild",
       "command": "cl.exe",
       "args": [
         "/O2",
         "/EHsc",
         "/nologo",
         "/Fe${fileDirname}\\${fileBasenameNoExtension}.exe",
-        "${file}"
+        "${file}",
+        "/link resources.res"
       ],
       "options": {
         "cwd": "${fileDirname}"
@@ -20,7 +27,8 @@
         "kind": "build",
         "isDefault": true
       },
-      "detail": "compiler: cl.exe (release)"
+      "detail": "compiler: cl.exe (build release)",
+      "dependsOn": ["build-resources"]
     }
   ]
 }
