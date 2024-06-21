@@ -90,10 +90,10 @@ int main()
     HWND hwnd;
     do
     {
-        // Check if the Rocket League window is active
+        // Get Rocket League window
         hwnd = FindWindowA("LaunchUnrealUWindowsClient", NULL);
 
-        // std::cout << hwnd << "\n";
+        // Check if the Rocket League window is active
         if (hwnd == GetForegroundWindow())
         {
             // Simulate pressing and releasing the Enter key
