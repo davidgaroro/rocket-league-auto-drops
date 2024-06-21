@@ -8,14 +8,16 @@ This program simulates Enter key press every second (only in Rocket League).
 
 Link: [rocket-league-auto-drops.zip](https://github.com/davidgaroro/rocket-league-auto-drops/releases/download/v1.0.0/rocket-league-auto-drops-1.0.0.zip)
 
+Note: Update Windows Defender if it's detected as a virus.
+
 ## How it works:
 
 1. Open Rocket League
-2. Go to **_Garage > Inventory > Reward Items_**
+2. Go to **Garage > Inventory > Reward Items**
 3. Select the drops you want to open
-4. Return to the program (Alt+Tab) and **_press any key to start_**
-5. Return to Rocket League and **_place your mouse cursor over the "Yes" button_** in the "Open Drop" message
-6. **_Don't move your mouse position_** and wait for the drops to open
+4. Return to the program (Alt+Tab) and **press any key to start**
+5. Return to Rocket League and **place your mouse cursor over the "Yes" button** in the "Open Drop" message
+6. **Don't move your mouse position** and wait for the drops to open
 7. To stop the program, close the program window
 
 ![image](https://github.com/davidgaroro/rocket-league-auto-drops/assets/13784162/b922cbd1-d67c-451b-ada7-ead9938e1a0c)
@@ -35,7 +37,7 @@ Table with the estimated time it takes to open the drops.
 
 ## Source Code
 
-Link: [rocket-league-auto-drops.cpp](./rocket-league-auto-drops.cpp)
+Link: [rocket-league-auto-drops.cpp](rocket-league-auto-drops.cpp)
 
 ```c++
 
@@ -89,3 +91,7 @@ This project is not endorsed by Rocket League or Psyonix LLC.
 ## Donation
 
 [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/donate?hosted_button_id=T7CVYXY994KHJ)
+
+## License
+
+[MIT](LICENSE)
